@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "symfony/symfony": ">=2.5.*"
+        "symfony/symfony": "~2.5.*"
     },
     "require-dev": {
         
@@ -27,7 +27,7 @@
     "target-dir": "Sensi//Bundle//YamlGuiBundle",
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-fork"
+            "dev-master": "1.0.x-dv"
         }
     }
 }
