@@ -27,7 +27,7 @@
     "target-dir": "Sensi//Bundle//YamlGuiBundle",
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "1.0.x-dev-fork"
         }
     }
 }
