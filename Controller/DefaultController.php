@@ -28,7 +28,6 @@ class DefaultController extends Controller
     public function render($view, array $parameters = array(), Response $response = null)
     {
         $parameters['base_template'] = isset($parameters['base_template']) ? $parameters['base_template'] : $this->container->getParameter('sensi.yamlgui.base_template');
-        $parameters['admin_pool']    = $this->get('sonata.admin.pool');
         return parent::render($view, $parameters);
     }
     

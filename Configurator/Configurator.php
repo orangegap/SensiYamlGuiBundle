@@ -96,7 +96,9 @@ class Configurator
     	foreach($parameters as $key => $value) {
     		if (strpos($key, '--')) {
     			$parentKey = explode('--', $key);
-    			if (isset($this->parameters[$parentKey[0]][$parentKey[1]])) {
+    			$parentKey[1] = str_replace("_",".",$parentKey[1]);
+    			//echo $parentKey[1]."<br>";
+    			if (isset($this->parameters[$parentKey[0]][$parentKey[1]])) {	
     				$this->parameters[$parentKey[0]][$parentKey[1]] = $value;
     				unset($parameters[$key]);
     			}
@@ -104,6 +106,8 @@ class Configurator
     	}
     	
         $this->parameters = array_merge($this->parameters, $parameters);
+        //print_r($this->parameters);
+        //die();
     }
 
     /**
