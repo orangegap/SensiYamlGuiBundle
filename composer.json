@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "symfony/symfony": "v2.5.3"
+        "symfony/symfony": "v2.5.6”
     },
     "require-dev": {
         
